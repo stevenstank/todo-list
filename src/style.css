@@ -64,16 +64,41 @@ body {
   background: #181818;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #ffd600;
 }
 
 #app {
   max-width: 800px;
   margin: 40px auto;
-  background: #222;
+  background: #181818 !important;
   border-radius: 16px;
   padding: 32px 28px;
-  transition: box-shadow 0.3s;
+  color: #ffd600;
+}
+
+form input, form select, form button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ffd600;
+  font-size: 1rem;
+  margin-right: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+  background: #232323;
+  color: #ffd600;
+}
+form input:focus, form select:focus {
+  border-color: #ffea00;
+}
+form button {
+  background: #ffd600;
+  color: #181818;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+form button:hover {
+  background: #ffea00;
 }
 
 .projects-list {
@@ -91,38 +116,11 @@ body {
   font-size: 1rem;
   border: none;
   transition: background 0.2s, color 0.2s;
-  box-shadow: 0 2px 6px rgba(255,255,0,0.04);
-  color: #fff;
+  color: #ffd600;
 }
 .project-item.selected {
   background: #ffd600;
   color: #181818;
-  box-shadow: 0 4px 12px rgba(255,255,0,0.15);
-}
-
-form input, form select, form button {
-  padding: 8px 12px;
-  border-radius: 6px;
-  border: 1px solid #ffd600;
-  font-size: 1rem;
-  margin-right: 8px;
-  outline: none;
-  transition: border-color 0.2s;
-  background: #222;
-  color: #fff;
-}
-form input:focus, form select:focus {
-  border-color: #ffd600;
-}
-form button {
-  background: #ffd600;
-  color: #181818;
-  border: none;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-form button:hover {
-  background: #ffea00;
 }
 
 .todos-list {
@@ -131,7 +129,7 @@ form button:hover {
 .todo-item {
   margin: 12px 0;
   padding: 12px 18px;
-  background: #181818 !important;
+  background: #232323 !important;
   border-radius: 8px;
   border-left: 6px solid #ffd600;
   font-size: 1.05rem;
@@ -139,7 +137,6 @@ form button:hover {
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  transition: box-shadow 0.2s, border-color 0.2s;
   color: #ffd600;
 }
 .todo-item strong {
